@@ -1,0 +1,17 @@
+# Configuration data for svcutil/influxdb example
+#
+# This assumes a bucket with a 24-hour retention named "sandbox24h".
+
+id: "example"
+url: http://tirzah.pab:8086
+organization: green-tirzah
+token: FPu9A3IizWJg1U3A1Qhx6-GmPcZJ2fsPyXq9RiOAWD_-zMzLW7lqWJ5rsohE00mDK85CuzS3zEfoXq7AEgbdEw==
+precision: 1us
+buckets:
+  sandbox24h:
+    options:
+      flush-interval: 5s
+    measurements:
+      counter:
+        int-fields:
+          - counter
