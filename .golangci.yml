@@ -1,3 +1,5 @@
 linters-settings:
   gocyclo:
     min-complexity: 65
+  staticcheck:
+    checks: ["all", "-SA1019"]
